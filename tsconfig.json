@@ -15,7 +15,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@carreras/ui": ["libs/ui/src/index.ts"],
+      "@carreras/apollo-client": ["libs/apollo-client/src/index.ts"],
+      "@carreras/graphql-typings": ["libs/graphql-typings/src/index.ts"],
+      "@carreras/graphql-codegen": ["libs/graphql-codegen/src/index.ts"]
+    }
   },
+  "files": ["tools/@types/graphql.d.ts"],
   "exclude": ["node_modules", "tmp"]
 }

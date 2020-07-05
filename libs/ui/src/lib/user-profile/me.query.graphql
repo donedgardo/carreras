@@ -1,0 +1,6 @@
+query ME {
+  me @client {
+    id
+    username
+  }
+}

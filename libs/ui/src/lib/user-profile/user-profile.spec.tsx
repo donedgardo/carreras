@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import Index from '../pages/index';
+import UserProfile from './user-profile';
 
-describe('Index', () => {
+describe(' UserProfile', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<Index />);
+    const { baseElement } = render(<UserProfile />);
     expect(baseElement).toBeTruthy();
   });
 });

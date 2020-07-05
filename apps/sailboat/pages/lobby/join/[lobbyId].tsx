@@ -1,18 +1,14 @@
-import React, {
-  FunctionComponent,
-} from 'react';
-
-import  { LoginButton } from '@carreras/ui';
+import React, { FunctionComponent } from 'react';
+import {useRouter} from "next/router";
 import {initializeApollo} from "@carreras/apollo-client";
 
-interface IndexProps {}
+interface LobbyPageProps {
+}
 
-export const Index: FunctionComponent<IndexProps> = () => {
-  return (
-    <>
-      <LoginButton />
-    </>
-  );
+export const LobbyJoin:FunctionComponent<LobbyPageProps>= () => {
+  const router = useRouter();
+  const { lobbyId } = router.query;
+  return <p>{lobbyId}</p>
 };
 
 export async function getStaticProps() {
@@ -32,5 +28,5 @@ export async function getStaticProps() {
   }
 }
 
+export default LobbyJoin;
 
-export default Index;

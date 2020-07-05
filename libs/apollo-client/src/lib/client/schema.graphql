@@ -1,0 +1,40 @@
+type Query {
+  me: User
+}
+
+type Mutation {
+  createLobby(input: CreateLobbyInput): Lobby
+  joinLobby(input: JoinLobbyInput): Lobby
+  createPostItCard(input: CreatePostItCardInput): PostItCard
+}
+
+input CreateLobbyInput {
+  name: String!
+}
+
+input JoinLobbyInput {
+  id: ID!
+}
+
+input CreatePostItCardInput {
+  text: String!
+}
+
+
+type User {
+  id: ID!
+  username: String!
+  host: Lobby
+}
+
+type Lobby {
+  id: ID!
+  name: String!
+  postIts: [PostItCard]
+  members: [User]
+}
+
+type PostItCard {
+  id: ID!
+  text: String!
+}

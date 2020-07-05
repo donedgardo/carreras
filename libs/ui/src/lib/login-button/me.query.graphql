@@ -1,0 +1,6 @@
+query LoginButton {
+  me @client {
+    id
+    username
+  }
+}

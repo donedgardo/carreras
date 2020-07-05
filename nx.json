@@ -25,6 +25,15 @@
     "sailboat-e2e": {
       "tags": [],
       "implicitDependencies": ["sailboat"]
+    },
+    "ui": {
+      "tags": []
+    },
+    "apollo-client": {
+      "tags": []
+    },
+    "graphql-codegen": {
+      "tags": []
     }
   }
 }

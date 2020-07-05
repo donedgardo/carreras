@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import Index from '../pages/index';
+import LoginButton from './login-button';
 
-describe('Index', () => {
+describe(' LoginButton', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<Index />);
+    const { baseElement } = render(<LoginButton />);
     expect(baseElement).toBeTruthy();
   });
 });
